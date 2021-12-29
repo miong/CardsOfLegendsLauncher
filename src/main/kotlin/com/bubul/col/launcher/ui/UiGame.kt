@@ -74,7 +74,7 @@ class UiGame : KtxGame<KtxScreen>() {
 
     fun getRessourcePath(resPath : String) : FileHandle?
     {
-        return Gdx.files.absolute(Paths.get("../game/launcher_data", resPath).toAbsolutePath().toString())
+        return Gdx.files.absolute(Paths.get("../game/resources/launcher_data", resPath).toAbsolutePath().toString())
     }
 
     fun exit() {

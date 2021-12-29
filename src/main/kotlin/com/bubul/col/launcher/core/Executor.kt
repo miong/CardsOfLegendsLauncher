@@ -14,5 +14,5 @@ fun startLauncherFromTmp()
 
 fun startGame()
 {
-    Runtime.getRuntime().exec(Paths.get("../game/CardsOfLegends.exe").toAbsolutePath().toString())
+    Runtime.getRuntime().exec(Paths.get("../game/CardsOfLegendsGame.exe").toAbsolutePath().toString())
 }

@@ -97,7 +97,7 @@ tasks.register<DefaultTask>("createPackage") {
     dependsOn("createExe")
     project.mkdir(layout.buildDirectory.dir("package"))
     val launcherDir = project.mkdir(layout.buildDirectory.dir("package/launcher"))
-    val gameDir = project.mkdir(layout.buildDirectory.dir("package/game"))
+    val gameDir = project.mkdir(layout.buildDirectory.dir("package/game/resources"))
     project.copy {
         from(layout.buildDirectory.dir("launch4j"))
         into(launcherDir)
