@@ -91,6 +91,7 @@ launch4j {
     mainClassName = "com.bubul.col.launcher.MainKt"
     dontWrapJar = true
     jarTask = project.tasks.jar.get()
+    manifest = "$projectDir/launch4j_manifest.xml"
 }
 
 tasks.register<DefaultTask>("createPackage") {
